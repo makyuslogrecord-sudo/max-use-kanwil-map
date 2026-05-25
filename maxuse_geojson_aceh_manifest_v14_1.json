@@ -1,0 +1,37 @@
+{
+  "name": "maxuse_geojson_aceh_manifest_v14_1",
+  "generated_at": "2026-05-25T06:58:42.785Z",
+  "source": "BIG ArcGIS REST - Administrasi_AR_KabKota_50K / Batas Wilayah Kabupaten/Kota",
+  "source_url": "https://geoservices.big.go.id/rbi/rest/services/BATASWILAYAH/Administrasi_AR_KabKota_50K/MapServer/0/query",
+  "target": "MAX-USE Kanwil Monitoring Map V14.1",
+  "crs": "EPSG:4326 / WGS84 longitude-latitude",
+  "geometry_precision": 5,
+  "max_allowable_offset": 0.0015,
+  "expected_feature_count": 23,
+  "actual_feature_count": 23,
+  "missing_kab_id": [],
+  "extra_kab_id": [],
+  "active_kantah": [
+    "KANTAH_ACEH_SINGKIL"
+  ],
+  "planned_kantah": [
+    "KANTAH_PIDIE",
+    "KANTAH_BANDA_ACEH",
+    "KANTAH_ACEH_BARAT_DAYA",
+    "KANTAH_PIDIE_JAYA"
+  ],
+  "status_counts": {
+    "BELUM_TARGET": 18,
+    "RENCANA": 4,
+    "AKTIF": 1
+  },
+  "files": [
+    "aceh_kabkota_polygon_maxuse_v14_1.geojson",
+    "maxuse_kantah_display_points_v14_1_1.geojson"
+  ],
+  "notes": [
+    "Polygon sudah dibersihkan menjadi field MAX-USE: kab_id, nama, tipe, kode_bps, kode_prov, kantah_id, status, target_minggu_ini, label_lon, label_lat, sort_no.",
+    "Angka tunggakan/residu tidak disimpan di GeoJSON. Join nanti memakai kantah_id dari PAS 6 JSON Kanwil.",
+    "Display point Kantah dibuat otomatis dari bbox polygon. Koordinat kantor asli bisa diisi belakangan pada real_lon/real_lat."
+  ]
+}
